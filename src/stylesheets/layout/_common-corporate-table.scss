@@ -1,0 +1,147 @@
+.common-entity-wrapper {
+  padding-right: 80px;
+  padding-left: 80px;
+
+  .corporate-entity-main-block {
+    padding: 0 25px 25px;
+    margin-top: 25px;
+    height: 950px;
+
+    background-color: #fff;
+
+    border: 1px solid #fff;
+    border-radius: 25px;
+
+    .request-all {
+      padding: .78571429em;
+
+      font-size: 1em;
+
+      background-color: #fff;
+      border: unset;
+    }
+  }
+
+  .inehritance-title {
+    font-weight: 500;
+  }
+
+  .corporate-entity-block-one {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: $white;
+    border-bottom: 1.5px solid $gray-50;
+  }
+
+  .menu-header {
+    display: flex;
+    margin-top: 20px;
+
+    &-search {
+      display: flex;
+      margin-top: 20px;
+
+      .input-wrapper {
+        width: 40%;
+
+        .ui.input {
+          width: 90%;
+        }
+      }
+
+      .ui.selection.dropdown {
+        margin-right: 50px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .input-wrapper {
+      width: 70%;
+
+      .ui.input {
+        width: 90%;
+      }
+    }
+
+    .table-filter {
+      margin-top: -10px;
+      width: 100%;
+    }
+
+    .pagination {
+      .ui.pagination {
+        a.active {
+          color: $blue-400 !important;
+
+          border-color: $blue-400 !important;
+        }
+
+        a:hover {
+          color: $blue-500 !important;
+
+          border-color: $blue-500 !important;
+        }
+
+        a:first-child,
+        a:last-child {
+          font-weight: 900;
+          color: $blue-400;
+
+          border-color: $white !important;
+        }
+      }
+    }
+  }
+
+  .counter-parties-table {
+    margin-top: 50px;
+
+    .sort {
+      cursor: pointer;
+    }
+
+    .uid {
+      font-weight: 600;
+      color: $blue-400;
+    }
+
+    .common-data {
+      color: $blue-200;
+    }
+
+    .connected-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      padding: 14px;
+
+      .connected {
+        padding: 5px 20px;
+
+        width: 150px;
+
+        color: $white;
+        text-align: center;
+
+        background-color: $blue-400;
+        border-radius: 30px;
+      }
+
+      span.For.Approval {
+        @extend .connected;
+        background-color: #a333c8;
+      }
+
+      span.Requested {
+        @extend .connected;
+        background-color: #f9b214;
+      }
+    }
+
+    .menu {
+      text-align: right;
+
+      cursor: pointer;
+    }
+  }
+}
